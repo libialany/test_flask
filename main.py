@@ -1,5 +1,6 @@
 from  flask import Flask,request,render_template,redirect,url_for,flash
 import os
+import pymysql.cursors
 app = Flask(__name__)
 app.secret_key = os.getenv('key')
 app.config['SESSION_TYPE'] = 'filesystem'
